@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #cfd6e1;
+    font-family: sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-section {
+    background-color: #fff;
+    width: 500px;
+    max-height: 800px;
+    overflow-y: auto;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(99, 99, 99, 0.2);
+    padding: 1.5rem;
+    color: #5a81da;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.image-wrapper {
+    width: 65px;
+    height: 65px;
+}
+
+.image-wrapper img {
+    width: 100%;
+}
+
+.file {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+    margin-top: 2.5rem;
+}
+
+.title-file {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    font-size: 1rem;
+}
+
+.vol {
+    font-size: 0.7rem;
+    color: black;
+}
+
+.info-file {
+    flex-grow: 1;
+    padding-top: 1.5rem;
+}
+
+.status-upload {
+    padding-top: 2rem;
+}
+
+
+.progress {
+    background-color: #9e9e9e;
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+}
+
+.bar-progress {
+    background-image: linear-gradient(to right, #f432ac, #e70669);
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.drag-input label{
+    border: 2px dashed #dfe7fe;
+    border-radius: 20px;
+    padding: 3rem 0;
+    display: inline-block;
+    width: 100%;
+    color: black;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+@media screen and (max-width: 350px) {
+    .upload-section {
+        background-color: #fff;
+        width: 320px;
+        height: 100vh;
+        padding: 1rem;
+        font-size: 1rem;
+        border-radius: 0;
+    }
+}
